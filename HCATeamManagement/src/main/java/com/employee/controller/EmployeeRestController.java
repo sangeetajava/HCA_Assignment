@@ -72,4 +72,10 @@ public class EmployeeRestController {
 		}
 	}
 	
+	@GetMapping("/findEmployee/byName/{name}")
+	public 	EmployeeDto getEMployee(@PathVariable String name) {
+		EmployeeDto dto = new EmployeeDto();
+		return dto;
+	}
+	
 }
